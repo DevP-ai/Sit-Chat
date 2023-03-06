@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'com.dev.android.sit_chat'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.dev.android.sit_chat"
         minSdk 26
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
