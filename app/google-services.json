@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1059631813414",
+    "project_id": "sit-chat2023",
+    "storage_bucket": "sit-chat2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059631813414:android:c374b79995d269b46fe7e7",
+        "android_client_info": {
+          "package_name": "com.dev.android.sit_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059631813414-s3ls035pkg109l9tc8pnk5gpl6v16m78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-9SHoF1yCkpsDZmrC8iBCsMZiCGJApqk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1059631813414-s3ls035pkg109l9tc8pnk5gpl6v16m78.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
