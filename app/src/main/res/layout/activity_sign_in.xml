@@ -8,39 +8,23 @@
     android:orientation="vertical"
     android:background="@drawable/w1"
     android:gravity="center"
-    tools:context=".SignUpActivity">
+    tools:context=".SignInActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
         android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
         <ImageView
             android:id="@+id/imageview"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/ic_whatsapp"/>
-
-        <EditText
-            android:id="@+id/txtUsername"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="User Name"
-            android:inputType="textPersonName"
-            android:padding="9dp"
-            android:textColor="@color/lightGrey"
-            android:textColorHint="@color/chatbackground"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-
         <EditText
             android:id="@+id/txtEmail"
             android:layout_width="match_parent"
@@ -55,7 +39,6 @@
             android:textColorHint="@color/chatbackground"
             android:textStyle="bold"
             android:textSize="20dp"/>
-
 
         <EditText
             android:id="@+id/txtPassword"
@@ -73,22 +56,22 @@
             android:textSize="20dp"/>
 
         <TextView
-            android:id="@+id/txtAlreadyHaveAccount"
+            android:id="@+id/txtClickSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Already Have Account?"
+            android:text="Click to Sign Up"
             android:textColor="@color/white"
             android:padding="5dp"
             android:textStyle="bold"
             android:layout_gravity="right"/>
 
         <Button
-            android:id="@+id/btnSignUp"
+            android:id="@+id/btnSignIn"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:padding="15dp"
-            android:text="Sign Up"
+            android:text="Sign In"
             android:textSize="20dp"
             android:textAllCaps="false"
             app:backgroundTint="@color/design_default_color_secondary_variant"
@@ -143,6 +126,5 @@
             android:textSize="19sp"/>
 
     </LinearLayout>
-
 
 </LinearLayout>
