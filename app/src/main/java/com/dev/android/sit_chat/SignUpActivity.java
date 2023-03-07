@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.dev.android.sit_chat.Models.Users;
 import com.dev.android.sit_chat.databinding.ActivitySignUpBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -49,6 +50,16 @@ public class SignUpActivity extends AppCompatActivity {
                                   public void onComplete(@NonNull Task<AuthResult> task) {
                                       progressDialog.dismiss();
                                       if(task.isSuccessful()){
+                                          //Database
+                                          Users user=new Users(binding.txtUsername.getText().toString(),
+                                                  binding.txtEmail.getText().toString(),binding.txtPassword.getText().toString());
+                                          //Get Uid
+                                          String id=task.getResult().getUser().getUid();
+                                          //Save Data in Database
+                                          database.getReference().child("Users").child(id).setValue(user);
+
+                                          //End Database
+
                                           Toast.makeText(SignUpActivity.this, "Registration Successful", Toast.LENGTH_SHORT).show();
                                           binding.txtUsername.setText("");
                                           binding.txtEmail.setText("");
