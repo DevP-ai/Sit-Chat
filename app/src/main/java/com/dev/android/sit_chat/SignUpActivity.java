@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -42,7 +43,9 @@ public class SignUpActivity extends AppCompatActivity {
         binding.btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!binding.txtUsername.getText().toString().isEmpty() && !binding.txtEmail.getText().toString().isEmpty() && !binding.txtPassword.getText().toString().isEmpty()){
+                if(!binding.txtUsername.getText().toString().isEmpty() && !binding.txtEmail.getText().toString().isEmpty() &&
+                        !binding.txtPassword.getText().toString().isEmpty())
+                {
                       progressDialog.show();
                       mAuth.createUserWithEmailAndPassword(binding.txtEmail.getText().toString(),binding.txtPassword.getText().toString())
                               .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -73,6 +76,16 @@ public class SignUpActivity extends AppCompatActivity {
                 }else{
                     Toast.makeText(SignUpActivity.this, "Enter Credential", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        //Go to SignIn Activity
+        binding.txtAlreadyHaveAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(SignUpActivity.this,SignInActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 
