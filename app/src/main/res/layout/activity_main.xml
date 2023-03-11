@@ -11,15 +11,14 @@
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:background="@color/colorPrimary"
-        android:elevation="10dp"
-        app:tabIndicator="@color/white"
-        app:tabSelectedTextColor="@color/black"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/colorPrimary"
         app:tabMaxWidth="0dp"
         app:tabGravity="fill"
         app:tabMode="fixed"
-        app:tabTextColor="@color/white"/>
+        app:tabTextColor="@color/black"/>
 
 
     <androidx.viewpager.widget.ViewPager
