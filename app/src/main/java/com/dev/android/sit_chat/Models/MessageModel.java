@@ -19,6 +19,9 @@ public class MessageModel {
         this.message = message;
     }
 
+
+
+
     public String getuserId() {
         return userId;
     }
